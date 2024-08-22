@@ -10,9 +10,13 @@ const app = express(); // Spinning up the express frame work server
 
 const port = 3030; // Define the port number for the server
 
+// ==============================================================
 // CORS means CROSS ORIGIN RESOURCE SHARING. Itis package . This is used when the front-end and back-end are from different origins (domains, ports, protocols) and the back-end hasn't been configured to accept request  from the front-end origin.
 
+// Using it as a MIDDLEWARE;  we say
 app.use(cors());
+
+// ==========================================
 
 // NOTE it is when you next using (app.use) that this const taskRouter and const notFound pops
 const taskRouter = require("./routes/taskRouter"); // Import the taskRouter for task-related routes.

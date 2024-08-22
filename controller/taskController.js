@@ -76,4 +76,6 @@ const eachTask = async (req, res) => {
   res.status(200).json({ task }); // Send the found task in JSON response
 };
 
+// ==================================================
+
 module.exports = { getAllTask, createTask, editTask, deleteTask, eachTask }; // Exporting the controller functions to be used in the router
